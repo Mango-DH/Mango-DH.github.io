@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>MangoPi:全志H6高速开发板</title>
+      <link href="/2024/11/18/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%89%8B%E6%90%93ARM%E9%AB%98%E9%80%9F%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
+      <url>/2024/11/18/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%89%8B%E6%90%93ARM%E9%AB%98%E9%80%9F%E5%BC%80%E5%8F%91%E6%9D%BF/</url>
+      
+        <content type="html"><![CDATA[<p>2024年11月18日，我还在读大三，在数字信号处理期中考试结束后，我深刻意识到自己先天考试废体，考研无望。于是放弃所有幻想，准备斗争，趁着自己还在学校掌握一点谋生的技能，也是为了之后的电子DIY项目打下基础。在创协社长的鼓励和帮助下，我开始绘制自己的高速板。一来不仅是为了磨炼自己的硬件能力方便找工作，二来不想浪费大学的黄金时光，想做出属于自己的东西，于是就有了这篇博客。</p><h2 id="项目实现资源"><a href="#项目实现资源" class="headerlink" title="项目实现资源"></a>项目实现资源</h2><p>项目工程原文链接：<br><a href="https://oshwhub.com/logicworld/h6_board">https://oshwhub.com/logicworld/h6_board</a></p><p>全志H6硬件开发资料：来自吴川斌的博客<br><a href="https://www.mr-wu.cn/allwinner-h6-soc-reference-design/">https://www.mr-wu.cn/allwinner-h6-soc-reference-design/</a></p><p>系统，软件和使用指南：<br><a href="http://www.orangepi.cn/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-3-LTS.html">http://www.orangepi.cn/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-3-LTS.html</a></p><p>可以看看芯板坊和OrangePi，看看他们都有卖什么样主控芯片的板子。芯板坊还专门做了FindBoard，可以按照各种条件搜索板子，这样就可以了解市面上都有哪些主控的板子，某一款芯片的流行程度。<br>芯板坊链接<br><a href="https://www.xinbanfang.com//">https://www.xinbanfang.com//</a></p><p>讨论QQ群：391544092</p><h2 id="芯片物料"><a href="#芯片物料" class="headerlink" title="芯片物料"></a>芯片物料</h2><p>为了避免踩坑太多，首先采用最保守的方案，芯片选择与博主尽量保持一致，也方便与开发群群友交流讨论问题。</p><h3 id="主控芯片：全志H6"><a href="#主控芯片：全志H6" class="headerlink" title="主控芯片：全志H6"></a>主控芯片：全志H6</h3><h3 id="DDR内存-LPDDR3-：Samsung-K4E6E304EC-EGCG"><a href="#DDR内存-LPDDR3-：Samsung-K4E6E304EC-EGCG" class="headerlink" title="DDR内存(LPDDR3)：Samsung-K4E6E304EC-EGCG"></a>DDR内存(LPDDR3)：Samsung-K4E6E304EC-EGCG</h3><h3 id="eMMC-NandFlash-KLM8G1GETF-B041"><a href="#eMMC-NandFlash-KLM8G1GETF-B041" class="headerlink" title="eMMC&#x2F;NandFlash: KLM8G1GETF-B041"></a>eMMC&#x2F;NandFlash: KLM8G1GETF-B041</h3><h4 id="电源方案对比"><a href="#电源方案对比" class="headerlink" title="电源方案对比"></a>电源方案对比</h4><table><thead><tr><th><strong>特性</strong></th><th><strong>PMIC</strong></th><th><strong>DC-DC&#x2F;LDO 分立方案</strong></th></tr></thead><tbody><tr><td><strong>集成度</strong></td><td>高，集成多路电源和控制功能</td><td>低，每个模块独立</td></tr><tr><td><strong>设计复杂度</strong></td><td>简单，适合快速开发</td><td>较高，需要细致设计和调试</td></tr><tr><td><strong>灵活性</strong></td><td>低，功能固定</td><td>高，可自由选择芯片和优化</td></tr><tr><td><strong>成本</strong></td><td>较高</td><td>可控（视需求和规模而定）</td></tr><tr><td><strong>PCB 面积</strong></td><td>小，占用空间少</td><td>大，占用更多 PCB 空间</td></tr><tr><td><strong>效率与性能</strong></td><td>整体优化较好，但某些性能可能妥协</td><td>可针对具体需求优化性能</td></tr><tr><td><strong>适用场景</strong></td><td>小型、复杂设备（如手机、平板）</td><td>功能需求简单或性能要求特殊的设备</td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2024/11/08/hello-world/"/>
       <url>/2024/11/08/hello-world/</url>
